@@ -7,4 +7,8 @@ class TestMethod < Minitest::Test
         assert_equal(1, 1)
     end
 
+    def test_string_chop
+        assert_equal("Hi guy", string_chop("Hi guy!"))
+    end
+
 end
