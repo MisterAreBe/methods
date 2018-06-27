@@ -19,4 +19,8 @@ class TestMethod < Minitest::Test
         assert_equal("String", string_chop("String\n"))
     end
 
+    def test_hash_compact!
+        assert_equal({a: 3, b: true, d: "nil"}, hash_compact({a: 3, b: true, c: nil, d: "nil"}))
+    end
+
 end
