@@ -11,4 +11,8 @@ class TestMethod < Minitest::Test
         assert_equal("Hi guy", string_chop("Hi guy!"))
     end
 
+    def test_string_chop_again
+        assert_equal("Why did you put the keys on the table", string_chop("Why did you put the keys on the table?"))
+    end
+
 end
