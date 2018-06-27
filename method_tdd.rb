@@ -23,4 +23,8 @@ class TestMethod < Minitest::Test
         assert_equal({a: 3, b: true, d: "nil"}, hash_compact({a: 3, b: true, c: nil, d: "nil"}))
     end
 
+    def test_array_shuffle
+        assert_equal(true, array_shuffle([0, 1, 2, 3, 4]))
+    end
+
 end
