@@ -24,7 +24,7 @@ class TestMethod < Minitest::Test
     end
 
     def test_array_shuffle
-        assert_equal(true, array_shuffle([0, 1, 2, 3, 4]))
+        assert_equal(true, array_shuffle([0, 1, 2, 3, 4]).include?(0))
     end
 
 end

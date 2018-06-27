@@ -8,3 +8,7 @@ def hash_compact(kill_nil)
     kill_nil = kill_nil.delete_if {|key, value| value == nil}
     kill_nil
 end
+
+def array_shuffle(truffle)
+    truffle
+end
