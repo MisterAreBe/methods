@@ -15,4 +15,8 @@ class TestMethod < Minitest::Test
         assert_equal("Why did you put the keys on the table", string_chop("Why did you put the keys on the table?"))
     end
 
+    def test_string_chops_newline
+        assert_equal("String", string_chop("String\n"))
+    end
+
 end
