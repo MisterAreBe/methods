@@ -10,5 +10,12 @@ def hash_compact(kill_nil)
 end
 
 def array_shuffle(truffle)
-    truffle
+    10.times do
+        truffle.push(rand(10))
+        truffle.unshift(rand(10))
+        truffle.insert(rand(10), rand(10))
+    end
+    truffle.uniq!
+    $truffle = truffle
+    $truffle
 end

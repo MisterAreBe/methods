@@ -28,8 +28,7 @@ class TestMethod < Minitest::Test
     end
 
     def test_array_shuffle
-        truffle = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-        refute_equal(array_shuffle(truffle), array_shuffle(truffle))
-        assert_equal(false, array_shuffle(truffle).include?(nil))
+        mix_alot = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        refute_equal($truffle, array_shuffle(mix_alot))
     end
 end
