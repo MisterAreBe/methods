@@ -19,3 +19,13 @@ def array_shuffle(truffle)
     $truffle = truffle
     $truffle
 end
+
+def array_permutation(per)
+    mutation = []
+    per.each_with_index do |num, index|
+        index = []
+        index << num
+        mutation << index
+    end
+    mutation
+end

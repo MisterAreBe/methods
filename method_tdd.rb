@@ -33,7 +33,7 @@ class TestMethod < Minitest::Test
     end
 
     def test_array_permutation
-        assert_equal([[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]], string_prepend([1, 2, 3]))
+        assert_equal([[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]], array_permutation([1, 2, 3]))
     end
 
 end
