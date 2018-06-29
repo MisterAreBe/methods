@@ -10,22 +10,13 @@ def hash_compact(kill_nil)
 end
 
 def array_shuffle(truffle)
+    ammount = truffle.length
     10.times do
-        truffle.push(rand(10))
-        truffle.unshift(rand(10))
-        truffle.insert(rand(10), rand(10))
+        truffle.push(rand(ammount))
+        truffle.unshift(rand(ammount))
+        truffle.insert(rand(ammount), rand(ammount))
     end
     truffle.uniq!
     $truffle = truffle
     $truffle
-end
-
-def array_permutation(per)
-    mutation = []
-    empty = []
-    per.each_with_index do |num, index|
-        empty << num
-        mutation << empty
-    end
-    mutation
 end
