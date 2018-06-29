@@ -31,4 +31,9 @@ class TestMethod < Minitest::Test
         mix_alot = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
         refute_equal($truffle, array_shuffle(mix_alot))
     end
+
+    def test_array_permutation
+        assert_equal([[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]], string_prepend([1, 2, 3]))
+    end
+
 end
