@@ -22,10 +22,10 @@ end
 
 def array_permutation(per)
     mutation = []
+    empty = []
     per.each_with_index do |num, index|
-        index = []
-        index << num
-        mutation << index
+        empty << num
+        mutation << empty
     end
     mutation
 end
